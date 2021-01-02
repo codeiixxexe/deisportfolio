@@ -1,0 +1,24 @@
+<!DOCTYPE recipe [
+<!ELEMENT recipe (chef name, recipe_name, description, ingredients, instructions, notes)>
+
+<!ELEMENT chef name (#PCDATA)>
+<!ELEMENT recipe name (#PCDATA)>
+<!ELEMENT description (description, serving, preptime, cooktime, nutrition, coursetype*)>
+<!ELEMENT description two (#PCDATA)>
+
+<!ELEMENT serving (#PCDATA)>
+<!ELEMENT preptime (#PCDATA)>
+<!ELEMENT cooktime (#PCDATA)>
+<!ELEMENT nutrition (#PCDATA)>
+
+<!ELEMENT ingredients (item+)>
+<!ELEMENT item (#PCDATA)>
+<!ELEMENT instructions (#PCDATA)>
+<!ELEMENT notes (#PCDATA)>
+
+<!ATTLIST ingredient ingredient name CDATA #REQUIRED>
+<!ATTLIST ingredient quantity CDATA #REQUIRED>
+]
+
+
+https://thesaltymarshmallow.com/best-banana-bread-recipe/
